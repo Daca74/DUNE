@@ -1,0 +1,403 @@
+/* Normalize*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 12px;
+}
+
+/*images du parallax*/
+section:nth-of-type(1) {
+    background-image: url('../media/images/dune-timothee-chalamet.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+section:nth-of-type(2) {
+    background-image: url('../media/images/dune-sharon-duncan-brewster.jpeg'); 
+}
+section:nth-of-type(3) {
+    background-image: url('../media/images/dune-cast-scaled.jpeg');
+}
+section:nth-of-type(4) {
+    background-image: url('../media/images/dune-production_01.jpg');
+}
+section:nth-of-type(5) {
+    background-image: url('../media/images/dune-timothee-chalamet-rebecca-ferguson.jpeg');
+}
+
+/*scroll paralax*/
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.scroller section {
+    scroll-snap-align: start;
+}
+
+/*logo du film*/
+#logo {
+    position: fixed;
+    height: 5vh;
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+
+/*logos des réseaux */
+header>div {
+    width:3%;
+    min-width: 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*dimension logo*/
+header>div>a>img {
+    height: 20px;
+}
+
+/*format et place de la video */
+#video {
+    width: 50vw;
+    height: calc(40vw * 390 / 640);
+    margin-left: -50vh;
+    margin-top: 8vh;
+} 
+
+
+/* position de la video au scroll */
+#video.scroll {
+    position: fixed !important;
+    width: 30vw !important;
+    height: calc(30vw * 1 / 2) !important;
+    top: -10vh !important;
+    right: 5% !important;
+}
+
+section>div {
+    position: relative;
+    height: calc(50vw * 390 / 640);
+    margin: auto;
+}
+
+
+/*titres */
+#bande-annonce h1{
+    margin-left: -50vh;
+}
+h1:nth-of-type(2){
+    margin-left: -10vh;
+}
+h1:nth-of-type(5){
+    margin-left: -10vh;
+}
+
+/*mise en page description*/
+#film {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#film div>p{
+    text-align : center;
+    background-color:rgba(255, 255, 255, 0.404);
+    top : 50vh;
+    height : 20vh;
+    column-rule-style: dotted;
+    columns: 3;
+    column-gap: 5vw;
+    text-align: justify;
+    margin-top: 60vh;
+    margin-left :10px;
+    margin-right :10px;
+    padding-top : 30px;
+}
+
+#film img {
+    height: 25vw;
+    position: absolute;
+    top:10vh;
+    left: 50vw;
+
+}
+
+#film h1 {
+    position : relative;
+    right : 33vw;
+    top : 23vw;
+    font-size: 3vh;
+}
+#characters h1{
+    position : relative;
+    text-align: center;
+    font-size: 4vh;
+}
+
+/* Dimensionner la carte */
+#carte {
+    width: 50vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 45vh;
+}
+#map h1 {
+    padding-top: 10%;
+}
+
+/*carrousel*/
+#carrousel {
+    width: 100vw;
+    height: 50vw;
+    margin: auto;
+    position: relative;
+}
+   
+#carrousel img {
+    position: absolute;
+    top: 8vh;
+    left: 38vw;
+    width: 30vw;
+    height: auto;
+}
+   
+#carrousel img:not(:first-of-type) {
+    display: none;
+}
+   
+.button {
+    position: absolute;
+    margin-left: 50vw;
+    padding-top: 40vw;
+}
+
+.button #un{
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -moz-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -ms-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -o-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: linear-gradient(to bottom, #ffffff, #1c1c1c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 14px;
+    color: #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.button #un{
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -moz-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -ms-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -o-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: linear-gradient(to bottom, #ffffff, #1c1c1c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 14px;
+    color: #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.button #deux{
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -moz-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -ms-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -o-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: linear-gradient(to bottom, #ffffff, #1c1c1c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 14px;
+    color: #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.button #trois{
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -moz-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -ms-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -o-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: linear-gradient(to bottom, #ffffff, #1c1c1c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 14px;
+    color: #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.button #quatre{
+    background: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -moz-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -ms-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: -o-linear-gradient(top, #ffffff, #1c1c1c);
+    background-image: linear-gradient(to bottom, #ffffff, #1c1c1c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 14px;
+    color: #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+  
+
+/*menu*/
+.menu {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    width: 3em;
+    height: 3em;
+    border-radius: 5em;
+    margin: auto;
+    padding: 0;
+    margin-top: 8em;
+    cursor: pointer;
+    border: 1em solid rgb(255, 255, 255);
+}
+  
+.menu:after {
+    content: "";
+    position: absolute;
+    top: 0.1em;
+    left: -0.1em;
+    width: 1em;
+    height: 0.2em;
+    border-top: 0.6em double rgb(0, 0, 0);
+    border-bottom: 0.2em solid rgb(0, 0, 0);
+}
+  
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.menu li {
+    width: 5em;
+    height: 1.4em;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    text-align: center;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    transition: all 1s;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu:hover li {
+    opacity: 1;
+    
+}
+
+/*Ajoutez un pseudo élément pour couvrir l'espace entre les liens.
+C'est pour que le menu ne perde pas : survoler le focus et disparaître*/
+  
+.menu:hover ul::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    left: 50%;
+    top: -5.0em;
+    /*Le pseudo-élément est un demi-cercle créé avec CSS.
+    Les bordures supérieure, inférieure et droite sont de 6,5 em (la gauche étant 0),
+    puis un border-radius est ajouté aux deux coins à droite.*/
+    border-width: 6.5em;
+    border-radius: 0 7.5em 7.5em 0;
+    border-left: 0;
+    border-style: solid;
+    /*besoin d'avoir une couleur de bordure pour que la bordure soit survolable.
+    J'en utilise un très léger pour qu'il soit invisible.*/
+    border-color: rgba(0, 0, 0, 0);
+    /*Mettez le pseudo-élément derrière les liens (pour qu'ils puissent être cliqués)*/
+    z-index: -1;
+    /*Définissez le curseur par défaut pour qu'il semble qu'il n'y ait rien*/
+    cursor: default;
+}
+  
+.menu a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    /*Il s'agit de centrer verticalement le texte 
+    sur les petites choses en forme d'onglet sur lesquelles se trouve le texte.*/
+    line-height: 1.5em;
+}
+  
+.menu a {
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+}
+.menu ul {
+    transform: rotate(180deg) translateY(-2em);
+    transition: 1s all;
+}
+.menu:hover ul {
+    transform: rotate(0deg) translateY(-1em);
+}
+.menu li:hover {
+    background: #000000;
+    z-index: 10;
+}
+  
+.menu li:nth-of-type(1) {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -1.2em;
+    top: -4.2em;
+}
+.menu li:nth-of-type(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 2em;
+    top: -3em;
+}
+.menu li:nth-of-type(3) {
+    position: absolute;
+    left: 3.4em;
+    top: 0.3em;
+}
+.menu li:nth-of-type(4) {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 2em;
+    top: 3.7em;
+}
+.menu li:nth-of-type(5) {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -1.2em;
+    top: 5em;
+}
+.hint {
+    text-align: center;
+}
